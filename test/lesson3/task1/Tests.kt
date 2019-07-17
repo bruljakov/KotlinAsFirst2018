@@ -173,10 +173,11 @@ class Tests {
     @Tag("Normal")
     fun sin() {
         assertEquals(0.0, sin(0.0, 1e-5), 1e-5)
-        assertEquals(1.0, sin(PI / 2.0, 1e-5), 1e-5)
+        assertEquals(1.0, sin(PI / 2, 1e-5), 1e-5)
         assertEquals(0.0, sin(PI, 1e-5), 1e-5)
         assertEquals(-1.0, sin(3.0 * PI / 2.0, 1e-5), 1e-5)
         assertEquals(0.0, sin(100 * PI, 1e-5), 1e-5)
+
     }
 
     @Test
@@ -226,7 +227,7 @@ class Tests {
         assertEquals(4, squareSequenceDigit(2))
         assertEquals(5, squareSequenceDigit(7))
         assertEquals(6, squareSequenceDigit(12))
-        assertEquals(0, squareSequenceDigit(17))
+        assertEquals(0, squareSequenceDigit(18))
         assertEquals(9, squareSequenceDigit(27))
     }
 
